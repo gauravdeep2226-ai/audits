@@ -755,6 +755,9 @@ p {
   position: relative;
 }
 
+.cta-section { display: flex; flex-direction: column; align-items: center; }
+
+
 /* --- Contact Section --- */
 .contact-grid {
   display: grid;
