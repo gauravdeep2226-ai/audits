@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Furlong Dental & Associates</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}:root{--blue:#2563eb;--blue-light:#dbeafe;--navy:#0c1222;--red:#ef4444;--green:#10b981;--amber:#f59e0b;--gray-50:#f9fafb;--gray-100:#f3f4f6;--gray-200:#e5e7eb;--gray-400:#9ca3af;--gray-500:#6b7280;--gray-700:#374151;--gray-900:#111827}body{font-family:'Inter',-apple-system,sans-serif;background:var(--gray-50);color:var(--gray-900);line-height:1.6;-webkit-font-smoothing:antialiased}.hero{background:var(--navy);position:relative;overflow:hidden;padding:0 0 64px}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 60%,rgba(37,99,235,.15),transparent),radial-gradient(ellipse 60% 50% at 80% 30%,rgba(96,165,250,.1),transparent);pointer-events:none}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}.hero-top-bar{display:flex;justify-content:space-between;align-items:center;padding:24px 48px;position:relative}.brand{display:flex;align-items:center;gap:10px}.brand-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#60a5fa);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:16px}.brand-name{color:#fff;font-weight:700;font-size:15px}.badge-date{font-size:13px;color:var(--gray-400);background:rgba(255,255,255,.06);padding:6px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.08)}.hero-content{text-align:center;padding:48px 24px 0;position:relative}.audit-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(37,99,235,.12);border:1px solid rgba(37,99,235,.2);color:#93bbfc;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:8px 18px;border-radius:24px;margin-bottom:28px}.hero h1{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:#fff;margin-bottom:10px;letter-spacing:-.5px}.hero-url{font-size:15px;color:var(--gray-400)}.scores-wrapper{display:flex;justify-content:center;gap:24px;margin-top:48px;padding:0 24px;position:relative}.score-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:32px 40px;text-align:center;backdrop-filter:blur(12px);min-width:180px}.score-circle{width:110px;height:110px;border-radius:50%;margin:0 auto 16px;position:relative;display:flex;align-items:center;justify-content:center}.score-circle svg{position:absolute;top:0;left:0;transform:rotate(-90deg)}.score-value{font-size:32px;font-weight:800;color:#fff;position:relative;z-index:1}.score-card-label{font-size:13px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:1px}.score-status{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-size:12px;font-weight:600;padding:4px 12px;border-radius:6px}.score-status.needs-work{background:rgba(239,68,68,.12);color:#fca5a5}.score-status.good{background:rgba(16,185,129,.12);color:#6ee7b7}.score-status.average{background:rgba(245,158,11,.12);color:#fcd34d}.container{max-width:760px;margin:0 auto;padding:0 24px}.section{padding:64px 0}.section-eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:10px}.section-eyebrow::before{content:'';width:24px;height:2px;background:var(--blue);border-radius:2px}.section-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--gray-900);margin-bottom:8px;letter-spacing:-.3px}.section-subtitle{font-size:16px;color:var(--gray-500);margin-bottom:40px}.issue-card{background:#fff;border:1px solid var(--gray-200);border-radius:16px;padding:32px;margin-bottom:16px;position:relative;overflow:hidden;transition:all .25s}.issue-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red);border-radius:4px 0 0 4px}.issue-card:hover{border-color:#d1d5db;box-shadow:0 8px 32px rgba(0,0,0,.06);transform:translateY(-2px)}.issue-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:12px}.issue-icon{width:40px;height:40px;border-radius:12px;background:#fef2f2;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}.issue-title{font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:4px}.severity{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:3px 10px;border-radius:4px}.severity.high{background:#fef2f2;color:var(--red)}.severity.medium{background:#fffbeb;color:var(--amber)}.issue-desc{font-size:15px;color:var(--gray-700);line-height:1.7;padding-left:56px}.fix-card{background:#fff;border:1px solid var(--gray-200);border-radius:16px;padding:32px;margin-bottom:16px;position:relative;overflow:hidden;transition:all .25s}.fix-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue);border-radius:4px 0 0 4px}.fix-card:hover{border-color:#d1d5db;box-shadow:0 8px 32px rgba(0,0,0,.06);transform:translateY(-2px)}.fix-top{display:flex;align-items:flex-start;gap:16px;margin-bottom:12px}.fix-icon{width:40px;height:40px;border-radius:12px;background:var(--blue-light);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}.fix-title{font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:4px}.fix-desc{font-size:15px;color:var(--gray-700);line-height:1.7;padding-left:56px}.impact-bar{display:flex;align-items:center;gap:12px;margin-top:16px;padding-left:56px}.impact-label{font-size:12px;font-weight:600;color:var(--gray-500);white-space:nowrap}.impact-track{flex:1;height:6px;background:var(--gray-100);border-radius:6px;overflow:hidden;max-width:200px}.impact-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--blue),#60a5fa)}.impact-value{font-size:13px;font-weight:700;color:var(--blue)}.section-divider{border:none;height:1px;background:var(--gray-200)}.cta-section{background:var(--navy);padding:80px 24px;text-align:center;position:relative;overflow:hidden}.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 100%,rgba(37,99,235,.15),transparent);pointer-events:none}.cta-section h2{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:#fff;margin-bottom:12px;position:relative}.cta-section p{font-size:16px;color:var(--gray-400);margin-bottom:36px;max-width:440px;margin-left:auto;margin-right:auto;position:relative}.cta-button{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--navy);font-size:16px;font-weight:700;padding:18px 44px;border-radius:14px;text-decoration:none;position:relative;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 8px 32px rgba(0,0,0,.3)}.footer{display:flex;align-items:center;justify-content:space-between;padding:24px 48px;background:var(--gray-50);border-top:1px solid var(--gray-200)}.footer-left{display:flex;align-items:center;gap:12px}.footer-avatar{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--blue),#60a5fa);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center}.footer-name{font-weight:700;font-size:13px;color:var(--gray-900)}.footer-role{font-size:13px;color:var(--gray-500)}.footer-right{font-size:11px;color:var(--gray-400)}@media(max-width:640px){.hero h1{font-size:30px}.scores-wrapper{flex-direction:column;align-items:center;gap:16px}.score-card{width:100%;max-width:280px}.hero-top-bar{padding:20px 24px;flex-direction:column;gap:12px}.issue-desc,.fix-desc,.impact-bar{padding-left:0}.issue-top,.fix-top{flex-direction:column;gap:12px}.section-title{font-size:24px}.cta-section{padding:56px 24px}.cta-section h2{font-size:26px}.footer{flex-direction:column;gap:16px;text-align:center}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="hero-top-bar">
+<div class="brand"><div class="brand-mark">G</div><div class="brand-name">Gaurav • Web Consulting</div></div>
+<div class="badge-date">December 2024</div>
+</div>
+<div class="hero-content">
+<div class="audit-badge">Performance Audit Report</div>
+<h1>Furlong Dental & Associates</h1>
+<p class="hero-url">furlongdental.com</p>
+</div>
+<div class="scores-wrapper">
+<div class="score-card">
+<div class="score-circle">
+<svg width="110" height="110"><circle cx="55" cy="55" r="48" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"/><circle cx="55" cy="55" r="48" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="301.6" stroke-dashoffset="75.4" stroke-linecap="round"/></svg>
+<span class="score-value">75</span>
+</div>
+<div class="score-card-label">Mobile Speed</div>
+<div class="score-status average">⚡ Average Performance</div>
+</div>
+<div class="score-card">
+<div class="score-circle">
+<svg width="110" height="110"><circle cx="55" cy="55" r="48" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="8"/><circle cx="55" cy="55" r="48" fill="none" stroke="#10b981" stroke-width="8" stroke-dasharray="301.6" stroke-dashoffset="30.16" stroke-linecap="round"/></svg>
+<span class="score-value">90</span>
+</div>
+<div class="score-card-label">Desktop Speed</div>
+<div class="score-status good">✓ Passing</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="section">
+<div class="section-header">
+<div class="section-eyebrow">Issues Found</div>
+<h2 class="section-title">What's Holding You Back</h2>
+<p class="section-subtitle">3 critical areas impacting your online presence and patient inquiries</p>
+</div>
+
+<div class="issue-card">
+<div class="issue-top">
+<div class="issue-icon">📱</div>
+<div class="issue-meta">
+<div class="issue-title">Missing Mobile Appointment CTA</div>
+<div class="severity high">High Impact</div>
+</div>
+</div>
+<p class="issue-desc">Your homepage HTML lacks a prominent, sticky mobile call-to-action for scheduling dental appointments. Patients searching for emergency dentistry or routine cleanups on mobile are hitting your site but have no clear path to book—they're bouncing to competitors. This is costing you direct patient conversions.</p>
+</div>
+
+<div class="issue-card">
+<div class="issue-top">
+<div class="issue-icon">⚡</div>
+<div class="issue-meta">
+<div class="issue-title">Unoptimized Hero Images & Assets</div>
+<div class="severity high">High Impact</div>
+</div>
+</div>
+<p class="issue-desc">Your hero section is likely loading full-resolution images without WebP conversion or lazy loading. On mobile networks, this creates a 3-5 second delay before patients see your brand or any appointment buttons. PageSpeed flagged this as a core bottleneck at 0.75 score.</p>
+</div>
+
+<div class="issue-card">
+<div class="issue-top">
+<div class="issue-icon">
