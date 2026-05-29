@@ -1,7 +1,6 @@
 /* ============================================================
-   CHIROPRACTIC PRACTICE â€” Industry Override
+   Chiropractors â€” Industry Override
    Loads after base.css
-   Premium UX: process timelines, condition cards, interactive
    ============================================================ */
 
 :root {
@@ -9,593 +8,339 @@
   --industry-surface-tint: #f0f9f6;
   --industry-icon-bg: linear-gradient(135deg, #1a6b5a, #0d4a3e);
   --industry-warm: #e8985a;
-  --industry-trust: #1a6b5a;
+  --industry-stone: #5a7d6d;
 }
 
-/* ---- Hero Overlay ---- */
-.hero--chiro .hero__overlay {
+/* Wellness-specific overrides */
+.hero--wellness .hero__overlay {
   background: linear-gradient(
     160deg,
-    rgba(13, 74, 62, 0.82) 0%,
-    rgba(26, 107, 90, 0.5) 40%,
-    rgba(232, 152, 90, 0.2) 100%
+    rgba(74, 103, 65, 0.75) 0%,
+    rgba(109, 139, 116, 0.45) 40%,
+    rgba(212, 165, 116, 0.25) 100%
   );
 }
 
-/* ---- Treatment Process Timeline ---- */
-.process-timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--space-xl) 0;
-}
-
-.process-timeline::before {
-  content: '';
+/* Soft organic shapes â€” decorative */
+.organic-shape {
   position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(to bottom, var(--brand-primary), var(--brand-primary-light), transparent);
-  transform: translateX(-50%);
+  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  opacity: 0.06;
+  pointer-events: none;
 }
 
-.process-step {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-xl);
-  margin-bottom: var(--space-2xl);
-  position: relative;
+.organic-shape--1 {
+  width: 500px;
+  height: 500px;
+  background: var(--brand-primary);
+  top: -200px;
+  right: -150px;
 }
 
-.process-step:nth-child(even) {
-  flex-direction: row-reverse;
-  text-align: right;
+.organic-shape--2 {
+  width: 350px;
+  height: 350px;
+  background: var(--industry-warm);
+  bottom: -100px;
+  left: -100px;
 }
 
-.process-step__number {
-  width: 56px;
-  height: 56px;
+/* Wellness service cards â€” softer, rounder */
+.service-card--wellness {
+  border-radius: var(--border-radius-xl);
+  border: none;
+  background: var(--brand-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card--wellness .service-card__icon {
+  background: var(--industry-icon-bg);
   border-radius: 50%;
-  background: var(--brand-gradient);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-heading);
-  font-size: var(--text-xl);
-  font-weight: 800;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 0 0 6px var(--brand-surface), 0 0 0 8px rgba(26, 107, 90, 0.15);
-}
-
-.process-step__content {
-  flex: 1;
-  background: var(--brand-surface);
-  border-radius: var(--border-radius-lg);
-  padding: var(--space-xl);
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--brand-border);
-  transition: all var(--duration-base) var(--ease-out-expo);
-}
-
-.process-step__content:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-4px);
-}
-
-.process-step__content h3 {
-  font-size: var(--text-lg);
-  margin-bottom: var(--space-sm);
-  color: var(--brand-secondary);
-}
-
-.process-step__content p {
-  font-size: var(--text-sm);
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .process-timeline::before { left: 28px; }
-  .process-step,
-  .process-step:nth-child(even) {
-    flex-direction: row;
-    text-align: left;
-  }
-  .process-step__number { width: 48px; height: 48px; font-size: var(--text-base); }
-}
-
-/* ---- Condition Cards (What We Treat) ---- */
-.conditions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--space-lg);
-}
-
-.condition-card {
-  background: var(--brand-surface);
-  border: 1px solid var(--brand-border);
-  border-radius: var(--border-radius-lg);
-  padding: var(--space-xl);
-  text-align: center;
-  transition: all var(--duration-base) var(--ease-out-expo);
-  cursor: default;
-  position: relative;
-  overflow: hidden;
-}
-
-.condition-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--brand-gradient);
-  transform: scaleX(0);
-  transition: transform var(--duration-slow) var(--ease-out-expo);
-}
-
-.condition-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(26, 107, 90, 0.2);
-}
-
-.condition-card:hover::after {
-  transform: scaleX(1);
-}
-
-.condition-card__icon {
   width: 64px;
   height: 64px;
-  border-radius: 50%;
-  background: var(--industry-surface-tint);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto var(--space-md);
-  font-size: 28px;
-  transition: all var(--duration-base) var(--ease-out-expo);
 }
 
-.condition-card:hover .condition-card__icon {
-  background: var(--industry-icon-bg);
-  transform: scale(1.1);
+.service-card--wellness:hover {
+  box-shadow: var(--shadow-lg);
 }
 
-.condition-card:hover .condition-card__icon span {
-  filter: brightness(10);
+.service-card--wellness::before {
+  height: 0;
 }
 
-.condition-card h4 {
-  font-size: var(--text-sm);
-  font-weight: 600;
-  margin-bottom: var(--space-xs);
-}
-
-.condition-card p {
-  font-size: var(--text-xs);
-  margin-bottom: 0;
-  color: var(--brand-text-muted);
-}
-
-/* ---- Technique Showcase ---- */
-.techniques-grid {
+/* Pricing tiers */
+.pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-xl);
 }
 
-.technique-card {
+.pricing-card {
   background: var(--brand-surface);
-  border-radius: var(--border-radius-xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-  transition: all var(--duration-base) var(--ease-out-expo);
   border: 1px solid var(--brand-border);
-}
-
-.technique-card:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-6px);
-}
-
-.technique-card__image {
-  aspect-ratio: 16/9;
-  background: var(--industry-surface-tint);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  transition: all var(--duration-base) var(--ease-out-expo);
   position: relative;
-  overflow: hidden;
 }
 
-.technique-card__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.pricing-card--featured {
+  border-color: var(--brand-primary);
+  box-shadow: var(--shadow-glow);
+  transform: scale(1.03);
 }
 
-.technique-card__badge {
+.pricing-card--featured::before {
+  content: 'Most Popular';
   position: absolute;
-  top: var(--space-md);
-  right: var(--space-md);
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--brand-primary);
   color: white;
   font-size: var(--text-xs);
   font-weight: 600;
-  padding: 4px 14px;
+  padding: 4px 20px;
   border-radius: var(--border-radius-full);
-  text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.technique-card__body {
-  padding: var(--space-xl);
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
 }
 
-.technique-card__body h3 {
-  font-size: var(--text-lg);
-  margin-bottom: var(--space-sm);
+.pricing-card--featured:hover {
+  transform: scale(1.03) translateY(-4px);
 }
 
-.technique-card__body p {
+.pricing-card__duration {
   font-size: var(--text-sm);
+  color: var(--brand-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: var(--space-md);
 }
 
-.technique-card__benefits {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+.pricing-card__price {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  color: var(--brand-secondary);
+  margin-bottom: var(--space-sm);
 }
 
-.technique-card__benefits li {
+.pricing-card__description {
+  font-size: var(--text-sm);
+  color: var(--brand-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.pricing-card__features {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.pricing-card__features li {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-size: var(--text-xs);
-  color: var(--brand-text-muted);
+  font-size: var(--text-sm);
 }
 
-.technique-card__benefits li::before {
+.pricing-card__features li::before {
   content: 'âœ“';
   color: var(--brand-primary);
   font-weight: 700;
-  font-size: 10px;
-  width: 18px;
-  height: 18px;
+  font-size: 12px;
+}
+
+/* Wellness modalities / specialties */
+.modalities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.modality-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--industry-surface-tint);
+  border: 1px solid rgba(109, 139, 116, 0.2);
+  border-radius: var(--border-radius-full);
+  padding: 8px 20px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--brand-text);
+  transition: all var(--duration-base) var(--ease-out-quart);
+}
+
+.modality-tag:hover {
+  background: var(--brand-primary);
+  color: white;
+  border-color: var(--brand-primary);
+}
+
+/* Booking widget placeholder */
+.booking-widget {
+  background: var(--brand-surface);
+  border: 2px solid var(--brand-border);
+  border-radius: var(--border-radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.booking-widget__icon {
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: var(--industry-surface-tint);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  font-size: 32px;
+  color: var(--brand-primary);
 }
 
-/* ---- New Patient Banner ---- */
-.new-patient-banner {
-  background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-dark));
-  color: white;
-  border-radius: var(--border-radius-xl);
-  padding: var(--space-2xl);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-xl);
-  position: relative;
-  overflow: hidden;
-}
-
-.new-patient-banner::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  pointer-events: none;
-}
-
-.new-patient-banner__content h3 {
-  color: white;
-  font-size: var(--text-2xl);
-  margin-bottom: var(--space-sm);
-}
-
-.new-patient-banner__content p {
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 0;
-  max-width: 50ch;
-}
-
-.new-patient-banner .btn {
-  flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-  .new-patient-banner {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* ---- Doctor/Team Profile Cards ---- */
-.doctor-grid {
+/* Therapist profiles */
+.therapist-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-xl);
 }
 
-.doctor-card {
+.therapist-card {
   background: var(--brand-surface);
   border-radius: var(--border-radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: all var(--duration-base) var(--ease-out-expo);
-  border: 1px solid var(--brand-border);
 }
 
-.doctor-card:hover {
+.therapist-card:hover {
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
 
-.doctor-card__image {
-  aspect-ratio: 1/1;
+.therapist-card__image {
+  aspect-ratio: 3/4;
   background: var(--industry-surface-tint);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 64px;
+  color: var(--brand-primary);
   overflow: hidden;
 }
 
-.doctor-card__image img {
+.therapist-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.doctor-card__body {
+.therapist-card__body {
   padding: var(--space-xl);
-  text-align: center;
 }
 
-.doctor-card__body h3 {
+.therapist-card__body h3 {
   font-size: var(--text-lg);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
-.doctor-card__body .title {
+.therapist-card__body .title {
   font-size: var(--text-sm);
   color: var(--brand-primary);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: var(--space-sm);
 }
 
-.doctor-card__body .bio {
-  font-size: var(--text-sm);
-  color: var(--brand-text-muted);
-  margin-bottom: var(--space-md);
-}
-
-.doctor-card__credentials {
+.therapist-card__specialties {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  justify-content: center;
+  margin-top: var(--space-sm);
 }
 
-.doctor-card__credentials span {
+.therapist-card__specialties span {
   font-size: var(--text-xs);
   background: var(--industry-surface-tint);
-  padding: 3px 12px;
+  padding: 3px 10px;
   border-radius: var(--border-radius-full);
   color: var(--brand-text-muted);
-  font-weight: 500;
 }
 
-/* ---- FAQ Accordion ---- */
-.faq-list {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+/* Atmosphere / ambiance section */
+.ambiance-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: var(--space-md);
+  height: 500px;
 }
 
-.faq-item {
-  background: var(--brand-surface);
-  border: 1px solid var(--brand-border);
-  border-radius: var(--border-radius-md);
+.ambiance-grid > :first-child {
+  grid-row: 1 / -1;
+}
+
+.ambiance-item {
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
-  transition: all var(--duration-base) var(--ease-out-quart);
-}
-
-.faq-item:hover {
-  border-color: rgba(26, 107, 90, 0.3);
-}
-
-.faq-item__question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-lg) var(--space-xl);
-  cursor: pointer;
-  font-weight: 600;
-  font-size: var(--text-base);
-  color: var(--brand-secondary);
-  transition: color var(--duration-fast);
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  font-family: var(--font-body);
-}
-
-.faq-item__question:hover {
-  color: var(--brand-primary);
-}
-
-.faq-item__icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
   background: var(--industry-surface-tint);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 48px;
   color: var(--brand-primary);
-  flex-shrink: 0;
-  transition: transform var(--duration-base) var(--ease-out-expo);
 }
 
-.faq-item.open .faq-item__icon {
-  transform: rotate(45deg);
+.ambiance-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.faq-item__answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height var(--duration-slow) var(--ease-out-expo),
-              padding var(--duration-base);
-  padding: 0 var(--space-xl);
+@media (max-width: 768px) {
+  .ambiance-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+  }
+  .ambiance-grid > :first-child {
+    grid-row: auto;
+    grid-column: 1 / -1;
+    min-height: 250px;
+  }
+  .ambiance-item { min-height: 180px; }
 }
 
-.faq-item.open .faq-item__answer {
-  max-height: 300px;
-  padding: 0 var(--space-xl) var(--space-lg);
-}
-
-.faq-item__answer p {
-  font-size: var(--text-sm);
-  line-height: 1.75;
-  margin-bottom: 0;
-}
-
-/* ---- Insurance Logos ---- */
-.insurance-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space-lg);
-  padding: var(--space-xl) 0;
-}
-
-.insurance-badge {
-  background: var(--brand-surface);
-  border: 1px solid var(--brand-border);
-  border-radius: var(--border-radius-md);
-  padding: var(--space-md) var(--space-xl);
-  font-size: var(--text-sm);
-  font-weight: 500;
-  color: var(--brand-text-muted);
-  transition: all var(--duration-base);
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-}
-
-.insurance-badge:hover {
-  border-color: var(--brand-primary);
-  color: var(--brand-primary);
-  box-shadow: var(--shadow-sm);
-}
-
-/* ---- Results Counter / Animated Stats ---- */
-.results-banner {
-  background: var(--brand-secondary);
-  border-radius: var(--border-radius-xl);
-  padding: var(--space-2xl);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: var(--space-xl);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.results-banner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 20% 50%, rgba(26, 107, 90, 0.3), transparent 60%),
-              radial-gradient(circle at 80% 50%, rgba(232, 152, 90, 0.15), transparent 60%);
-  pointer-events: none;
-}
-
-.result-item {
-  position: relative;
-}
-
-.result-item__number {
-  font-family: var(--font-heading);
-  font-size: var(--text-3xl);
-  font-weight: 800;
-  color: white;
-  line-height: 1;
-  margin-bottom: var(--space-xs);
-}
-
-.result-item__label {
-  font-size: var(--text-xs);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* ---- Spine Decorative Elements ---- */
-.spine-accent {
-  position: absolute;
-  opacity: 0.03;
-  pointer-events: none;
-  font-size: 300px;
-  right: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* ---- Chiro Service Cards â€” Clinical Feel ---- */
-.service-card--chiro {
-  border-left: 4px solid transparent;
-  transition: all var(--duration-base) var(--ease-out-expo);
-}
-
-.service-card--chiro:hover {
-  border-left-color: var(--brand-primary);
-}
-
-.service-card--chiro .service-card__icon {
-  background: var(--industry-icon-bg);
-  border-radius: var(--border-radius-lg);
-  width: 56px;
-  height: 56px;
-}
-
-/* ---- Chiro-specific section order recommendation:
+/* Wellness-specific section order recommendation:
    1. Nav
-   2. Hero â€” "Live Without Pain" messaging, trust badges
-   3. New patient banner / special offer
-   4. Conditions we treat (condition cards grid)
-   5. Treatment process timeline (first visit â†’ assessment â†’ treatment â†’ wellness)
-   6. Services / techniques grid
-   7. About the doctor(s) â€” credentials, photo, bio
-   8. Results banner (dark stats bar)
-   9. Testimonials
-   10. FAQ accordion
-   11. Insurance accepted
-   12. CTA section
-   13. Contact + map + hours
-   14. Footer
----- */
+   2. Hero with "Book a Session" CTA â€” serene, warm imagery
+   3. Modalities/specialties tags
+   4. Services grid with pricing
+   5. About the practice / philosophy
+   6. Therapist profiles
+   7. Ambiance gallery
+   8. Testimonials
+   9. Pricing tiers (if not inline with services)
+   10. CTA section (gift cards + booking)
+   11. Contact + map + hours
+   12. Footer
+*/
