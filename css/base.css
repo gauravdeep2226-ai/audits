@@ -300,7 +300,6 @@ p {
   display: flex;
   align-items: center;
   padding: var(--space-section) 0;
-  overflow: hidden;
 }
 
 .hero__bg {
