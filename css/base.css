@@ -446,6 +446,7 @@ p {
 /* --- Sections --- */
 .section {
   padding: var(--space-section) 0;
+  min-height: 50vh;
   position: relative;
 }
 
