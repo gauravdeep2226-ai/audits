@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Jessica Smith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">G</div><div class="brand-name">Gaurav · Web Consulting</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Jessica Smith</h1>
+<p class="hero-url">rituallabs.shop</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="58">0</div>
+</div>
+<div class="score-label">Mobile Speed</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="83">0</div>
+</div>
+<div class="score-label">Desktop Speed</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">What's costing you conversions</h2>
+<p class="sec-sub">Three measured problems pulling revenue from your DTC supplement store.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">⏱️</div><div><div class="card-title">Largest Contentful Paint delayed by 15 seconds</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your main product image and call-to-action take 15.0 seconds to load on mobile. Research shows 1 in 4 shoppers abandon before the hero content appears. On cellular connections, visitors to rituallabs.shop are staring at a blank screen long enough to tab to a competitor.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">📦</div><div><div class="card-title">266 KB of unused JavaScript slowing checkout</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your site loads 266 KB of JavaScript that never executes. On a 4G mobile connection, that's 2–3 extra seconds of blocking before the Add to Cart button responds. Every second of delay on checkout drops conversion rates by roughly 7%.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🎯</div><div><div class="card-title">First Contentful Paint at 4.3 seconds</div><span class="sev med">Medium Impact</span></div></div>
+<p class="card-desc">Visitors wait 4.3 seconds before they see any content—text, images, or buttons. By then, 15–20% of mobile shoppers have already closed the tab. For a supplement brand competing on search, this delays trust-building product claims and testimonials from appearing.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by conversion impact.</p>
+<div class="card fix" style="--w:92%">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Remove unused JavaScript and code-split by page</div></div></div>
+<p class="card-desc">Audit your bundle and defer non-critical scripts (like analytics, reviews widgets, upsell logic) until after the main product form loads. The 266 KB of unused JS can be eliminated entirely or tree-shaken from your build. This unblocks your Add to Cart button by 2–3 seconds on mobile.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 35% faster checkout interaction</span></div>
+</div>
+<div class="card fix" style="--w:88%">
+<div class="card-top"><div class="ico">🖼️</div><div><div class="card-title">Optimize and lazy-load product hero images</div></div></div>
+<p class="card-desc">Your hero image is loading uncompressed. Serve it as WebP with srcset, and use native lazy-loading for below-the-fold product galleries. Cache the primary product image aggressively (browser cache + CDN). This alone can shave 6–8 seconds off LCP on cellular.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 50% faster hero appearance</span></div>
+</div>
+<div class="card fix" style="--w:80%">
+<div class="card-top"><div class="ico">💾</div><div><div class="card-title">Enable aggressive browser caching (322 KB savings)</div></div></div>
+<p class="card-desc">Google PageSpeed estimates 322 KB in cache savings—meaning Shopify's CSS, JS, and font files are not being cached long enough. Increase cache TTL on static assets to 30 days. This applies only on repeat visitors, but it makes the second and third visit instant.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Repeat-visit speed, ↓ repeat-purchase friction</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">G</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
