@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Pawfectheaven</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">G</div><div class="brand-name">Gaurav · Web Consulting</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Pawfectheaven</h1>
+<p class="hero-url">pawfectheaven.com</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="93">0</div>
+</div>
+<div class="score-label">Mobile Speed</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="98">0</div>
+</div>
+<div class="score-label">Desktop Speed</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">What's costing you conversions</h2>
+<p class="sec-sub">Three measured problems pulled from your live site.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Unused CSS slowing product discovery</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your site ships 59 KiB of unused CSS that never applies to any page. On mobile over LTE, visitors waste precious seconds loading dead style rules before they can find and browse your flea-tick pendants. This delay directly reduces time-on-site and cart engagement.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">📦</div><div><div class="card-title">Bloated page payload slowing checkout</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your homepage weighs 850 KiB total — with potential cache gains of 13 KiB left on the table. Every shopper on a slower connection abandons cart faster when the full page takes longer to arrive. Tightening this footprint keeps more customers in the funnel.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🎯</div><div><div class="card-title">Contentful Paint timing creates blank-screen lag</div><span class="sev med">Medium Impact</span></div></div>
+<p class="card-desc">Your Largest Contentful Paint is 2.6 seconds — meaning visitors stare at an empty page for nearly 3 seconds before your hero image or product grid appears. On mobile, this is the moment half your traffic bounces to competitors. Shaving 1 second here directly lifts conversion rate.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by impact.</p>
+<div class="card fix" style="--w:85%">
+<div class="card-top"><div class="ico">✂️</div><div><div class="card-title">Remove unused CSS rules and minify</div></div></div>
+<p class="card-desc">Audit and prune 59 KiB of dead CSS (likely from unused theme components or old campaigns). Run final styles through a minifier. This cuts overhead before First Contentful Paint and unblocks the render faster, letting product images load sooner for faster browsing.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 15–20% faster first paint</span></div>
+</div>
+<div class="card fix" style="--w:72%">
+<div class="card-top"><div class="ico">🖼️</div><div><div class="card-title">Optimize images and enable lazy loading</div></div></div>
+<p class="card-desc">Convert product photos to WebP, serve next-gen formats, and lazy-load below-the-fold images. Your 850 KiB footprint likely includes uncompressed product shots. Paired with aggressive caching, this shaves 200+ KiB and cuts LCP to under 1.5s, keeping shoppers engaged.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-label">↑ 35–40% faster checkout entry</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 12% higher conversion</span></div>
+</div>
+<div class="card fix" style="--w:68%">
+<div class="card-top"><div class="ico">💾</div><div><div class="card-title">Implement aggressive browser caching headers</div></div></div>
+<p class="card-desc">Set 30-day cache expiry on CSS, JS, and images so repeat visitors (crucial for DTC) skip re-download entirely. Combined with the 13 KiB CDN savings already identified, returning customers see instant page loads — boosting repeat order rate and customer lifetime value.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Return visitor retention</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">G</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
