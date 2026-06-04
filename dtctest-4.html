@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Velora Naturals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">G</div><div class="brand-name">Gaurav · Web Consulting</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Velora Naturals</h1>
+<p class="hero-url">tryveloralabs.com</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="76">0</div>
+</div>
+<div class="score-label">Mobile Speed</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="98">0</div>
+</div>
+<div class="score-label">Desktop Speed</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">What's costing you conversions</h2>
+<p class="sec-sub">Three measured problems pulled from your live site.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">⏳</div><div><div class="card-title">Bloated JavaScript delays your storefront</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your site loads 191 KiB of unused JavaScript — code that never runs on mobile. This bloat adds 1–2 seconds to your load time on cellular, delaying the moment shoppers see your products and hit Add to Cart. Every second of delay costs you conversions.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🖼️</div><div><div class="card-title">Largest Contentful Paint takes 4.9 seconds</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your main product images and content don't appear until nearly 5 seconds after a visitor lands on your site. On mobile over 4G, roughly 1 in 5 shoppers bounce before the page fully loads. This directly kills your conversion rate.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🎨</div><div><div class="card-title">Unused CSS adds unnecessary page weight</div><span class="sev med">Medium Impact</span></div></div>
+<p class="card-desc">60 KiB of unused CSS sits on your page but never gets applied — wasted kilobytes that slow your initial render. Removing this would speed up First Contentful Paint by roughly 10–15%, letting customers see your brand faster.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by impact.</p>
+<div class="card fix" style="--w:85%">
+<div class="card-top"><div class="ico">⚙️</div><div><div class="card-title">Code-split and defer non-critical JavaScript</div></div></div>
+<p class="card-desc">Identify the 191 KiB of unused JS (likely analytics, tracking, and third-party widgets) and load it only when needed — after the page is interactive. Shopify theme and secondary.js files should be audited for lazy-loading opportunities. This removes the main blocker to FCP.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 2–3s faster initial load</span></div>
+</div>
+<div class="card fix" style="--w:78%">
+<div class="card-top"><div class="ico">📦</div><div><div class="card-title">Optimize and compress product images</div></div></div>
+<p class="card-desc">Your LCP assets are likely large product images. Serve them as WebP with aggressive compression, and use responsive images (srcset) to serve smaller versions on mobile. Consider lazy-loading below-the-fold product grids. A 4.9s LCP should drop to under 2.5s with proper image optimization.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 40–50% faster LCP</span></div>
+</div>
+<div class="card fix" style="--w:70%">
+<div class="card-top"><div class="ico">🧹</div><div><div class="card-title">Purge and optimize stylesheet</div></div></div>
+<p class="card-desc">Audit the stylesheet for dead CSS rules (60 KiB is a significant amount). Tools like PurgeCSS can strip unused selectors. Shrine theme pro may have default styles for components you don't use — remove those imports or use a more minimal theme variant. This won't move the needle on conversions alone, but combined with the above, it shaves 200–300ms.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 10–15% FCP improvement</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">G</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
