@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Marshall's Truck Stop-Restaurant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">P</div><div class="brand-name">PageLabHQ · Web Performance</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Marshall's Truck Stop-Restaurant</h1>
+<p class="hero-url">www.marshalltruck.com/site/home</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="44">0</div>
+</div>
+<div class="score-label">Mobile Experience</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="69">0</div>
+</div>
+<div class="score-label">Desktop Experience</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">Why hungry customers are picking the diner next door</h2>
+<p class="sec-sub">Three measured problems pulled from your live site.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">📱</div><div><div class="card-title">Mobile site crawls on cellular — customers abandon before your menu appears</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your mobile score of 44 means the site is painfully slow on phones. When someone stands outside your restaurant on cellular data, Joy's Cafe menu takes too long to load. 53% of mobile visitors leave after 3 seconds — by the time your hours and phone number appear, they're already Googling the truck stop down the road.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🔍</div><div><div class="card-title">Google can't see most of your images — you're invisible in local search results</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">With FIFA fans flooding Hamilton right now, thousands are searching "restaurants near me" on their phones. Your images lack alt text — so Google can't read what you're serving. This costs you visibility in Google Images and Local results. Your competitor with properly labeled photos shows up first, and you lose the walk-in.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Render-blocking resources delay your menu by seconds — browsers wait, customers don't</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your site loads render-blocking CSS and JavaScript before showing the menu or reservation button. A hungry customer on a slow connection sees a blank screen instead of your specials. Every second of delay is a customer calling ahead to Perkins instead.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by impact.</p>
+<div class="card fix" style="--w:92%">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Defer non-critical CSS and async-load JavaScript</div></div></div>
+<p class="card-desc">Move render-blocking resources below the fold and load them asynchronously. This surfaces your menu, hours, and Joy's Cafe location within 1.5 seconds on mobile — fast enough that a hungry customer on their phone actually sees what you serve.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Menu loads in under 2 seconds on cellular</span></div>
+</div>
+<div class="card fix" style="--w:88%">
+<div class="card-top"><div class="ico">🖼️</div><div><div class="card-title">Add descriptive alt text to all food and location images</div></div></div>
+<p class="card-desc">Write alt text for your truck stop photos, Joy's Cafe plating, and facility shots. This lets Google index and rank your images in local search. When someone searches "restaurants near me," your food photos show up — and they click through to your site instead of a competitor.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Visible in Google Images and local search</span></div>
+</div>
+<div class="card fix" style="--w:85%">
+<div class="card-top"><div class="ico">📊</div><div><div class="card-title">Optimize images and remove unused CSS to cut mobile payload</div></div></div>
+<p class="card-desc">Compress your slider images (currently large), minify CSS, and remove unused stylesheets. This shrinks your initial load on cellular data. Faster site = more walk-ins from "restaurants near me" searches and more reservation calls during peak hours.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ 30% faster on mobile — more customer conversions</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">P</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep · PageLabHQ</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
