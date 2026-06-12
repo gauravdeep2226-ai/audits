@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Seasoned Restaurant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">P</div><div class="brand-name">PageLabHQ · Web Performance</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Seasoned Restaurant</h1>
+<p class="hero-url">www.seasonedrestaurant.ca</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="87">0</div>
+</div>
+<div class="score-label">Mobile Experience</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="98">0</div>
+</div>
+<div class="score-label">Desktop Experience</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">Why hungry customers are picking the place next door</h2>
+<p class="sec-sub">Three measured problems pulled from your live site.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">⏱️</div><div><div class="card-title">Performance metrics unavailable — can't measure if your menu loads fast enough</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your site's speed data isn't being captured — we can't see how long your menu, hours, or reservation button take to appear on a customer's phone. Without visibility into load times, you're flying blind. A hungry person on their phone needs your menu in under 3 seconds or they scroll to the next restaurant in Google. You won't know if you're losing them.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🔍</div><div><div class="card-title">No meta description — Google has nothing to show when someone searches "restaurants near me"</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">When a potential customer searches "restaurants near me" on Google, your listing appears — but with no description underneath. Your competitor's listing shows "Award-winning Italian — Reserve online — Open till 11pm." They get the tap. You get scrolled past. A meta description is a 160-character sales pitch that runs every single day. You're not using it.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">📱</div><div><div class="card-title">Wix platform bloat — your site loads heavy code that slows down mobile customers</div><span class="sev med">Medium Impact</span></div></div>
+<p class="card-desc">Your Wix site is loading multiple large bundle scripts (handleAccessTokens, overrideGlobals, polyfills) in the head section before the page renders. On cellular data, this overhead delays when a customer sees your menu, hours, or phone number. Every extra second a hungry person waits is a second closer to them tapping the restaurant below you in search results.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by impact.</p>
+<div class="card fix" style="--w:95%">
+<div class="card-top"><div class="ico">📊</div><div><div class="card-title">Enable and monitor Core Web Vitals tracking</div></div></div>
+<p class="card-desc">Set up Google Analytics and Search Console to capture real load-time data from actual customers visiting your site. Once you're measuring, you'll know exactly how fast (or slow) your menu loads on phones, which lets you act on the data that matters most: are walk-in customers seeing your hours before they leave the page?</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ See exactly how fast customers experience your site</span></div>
+</div>
+<div class="card fix" style="--w:92%">
+<div class="card-top"><div class="ico">✍️</div><div><div class="card-title">Add a high-impact meta description</div></div></div>
+<p class="card-desc">Write a 160-character description that includes your cuisine type, reservation availability, hours, and a hook: "Seasoned Restaurant — Fresh seasonal menu — Reserve online — Open daily. Award-winning dining in downtown [City]." This description shows up in every Google search result and tells customers why they should click you instead of your competitor.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ First result for "restaurants near me"</span></div>
+</div>
+<div class="card fix" style="--w:88%">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Migrate to a performance-first platform or optimize Wix rendering</div></div></div>
+<p class="card-desc">Wix's architecture loads heavy overhead by default. Either migrate key pages to a lighter platform (like Next.js or Astro) or work with Wix support to defer non-critical scripts and use lazy loading for images. Every 500ms you cut off load time brings more walk-in customers from "restaurants near me" before they leave your site.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Menu and hours load in under 2.5 seconds</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">P</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep · PageLabHQ</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
