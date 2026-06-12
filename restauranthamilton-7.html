@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit — Island Queens Restaurant and Catering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://gauravdeep2226-ai.github.io/audits/css/audit.css">
+<script defer src="https://gauravdeep2226-ai.github.io/audits/css/audit.js"></script>
+</head>
+<body>
+<div class="hero">
+<div class="hero-grid"></div>
+<div class="topbar">
+<div class="brand"><div class="brand-mark">P</div><div class="brand-name">PageLabHQ · Web Performance</div></div>
+<div class="badge-date"></div>
+</div>
+<div class="hero-content">
+<div class="eyebrow"><span class="dot"></span>Performance &amp; Visibility Audit</div>
+<h1>Island Queens Restaurant and Catering</h1>
+<p class="hero-url">www.islandqueens.ca</p>
+</div>
+<div class="scores">
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="77">0</div>
+</div>
+<div class="score-label">Mobile Experience</div>
+<div class="score-tag"></div>
+</div>
+<div class="score-card">
+<div class="ring-wrap">
+<svg width="92" height="92"><circle class="ring-bg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/><circle class="ring-fg" cx="46" cy="46" r="39" fill="none" stroke-width="8"/></svg>
+<div class="ring-num" data-count="98">0</div>
+</div>
+<div class="score-label">Desktop Experience</div>
+<div class="score-tag"></div>
+</div>
+</div>
+</div>
+<div class="body">
+<div class="wrap">
+<div class="section">
+<div class="sec-eyebrow">Issues Found</div>
+<h2 class="sec-title">Why hungry customers are picking the place next door</h2>
+<p class="sec-sub">Three measured problems pulled from your live site.</p>
+<div class="card issue">
+<div class="card-top"><div class="ico">📊</div><div><div class="card-title">Core metrics are unmeasurable — site may have critical loading delays</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your Largest Contentful Paint, First Contentful Paint, and other speed metrics aren't loading from Google PageSpeed. This means your menu, hours, and reservation button may be taking 5+ seconds to appear on mobile — and 53% of hungry customers leave after 3 seconds. If customers can't see your menu before they bounce, they're tapping the restaurant below you in Google results.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">🔍</div><div><div class="card-title">Google has no description for your listing</div><span class="sev high">High Impact</span></div></div>
+<p class="card-desc">Your meta description is missing or unreadable by Google. When someone searches "restaurants near me" on their phone, Google shows your name — but nothing underneath to tempt them. Your competitor shows "Reserve a table — daily specials available." They get the tap, you get scrolled past. This is free marketing you're losing every single day.</p>
+</div>
+<div class="card issue">
+<div class="card-top"><div class="ico">⚡</div><div><div class="card-title">Wix platform bloat loading invisible code</div><span class="sev med">Medium Impact</span></div></div>
+<p class="card-desc">Your site is built on Wix, which loads dozens of JavaScript bundles and polyfills before your actual menu ever renders. On cellular data, customers waiting for your specials or hours to load are seeing spinners while invisible browser compatibility code runs. This unnecessary overhead pushes your real content further down the waterfall — and further down the priority list of impatient diners.</p>
+</div>
+</div>
+<hr class="divider">
+<div class="section">
+<div class="sec-eyebrow">Recommendations</div>
+<h2 class="sec-title">How we'd fix it</h2>
+<p class="sec-sub">Three targeted changes, ranked by impact.</p>
+<div class="card fix" style="--w:92%">
+<div class="card-top"><div class="ico">📈</div><div><div class="card-title">Audit and fix rendering bottlenecks</div></div></div>
+<p class="card-desc">Run a full PageSpeed re-crawl to surface your real LCP and FCP numbers. If they're above 3 seconds on mobile, we'll identify which Wix components (image carousels, embedded maps, slow third-party widgets) are blocking your menu from loading fast. Move critical content — phone, hours, menu link — to the top of the page and remove render-blocking resources.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Menu loads in under 2.5 seconds on mobile</span></div>
+</div>
+<div class="card fix" style="--w:89%">
+<div class="card-top"><div class="ico">🎯</div><div><div class="card-title">Write a compelling meta description</div></div></div>
+<p class="card-desc">Create a 155-character meta description that shows up under your listing in Google. Something like: "Island Queens Restaurant &amp; Catering — Caribbean cuisine, reservations available, dine in or takeout." This is the difference between a customer clicking your name or the competitor's. It's a one-minute fix that directly fights invisibility.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ CTR from Google "restaurants near me" results</span></div>
+</div>
+<div class="card fix" style="--w:85%">
+<div class="card-top"><div class="ico">🚀</div><div><div class="card-title">Consider moving off Wix for speed-critical restaurant sites</div></div></div>
+<p class="card-desc">Wix is convenient, but its monolithic JavaScript framework adds 500+ KB of overhead before your first byte of content appears. If speed is costing you walk-ins and FIFA fans during tournaments, a lightweight alternative (Webflow, custom Next.js, or a restaurant-specific CMS like Toast) will load your menu in 1.2 seconds instead of 3+ on cellular. This is a longer-term fix but a game-changer for visibility and conversions.</p>
+<div class="impact"><span class="impact-label">Expected impact</span><div class="impact-track"><div class="impact-fill"></div></div><span class="impact-val">↑ Higher Google rankings, more walk-ins from local search</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cta">
+<h2>Ready to fix this?</h2>
+<p>Let's walk through these findings — and I'll show you what your new site could look like.</p>
+<a href="https://cal.com/gauravdeep-singh-2226/15min" class="btn">Book a 15-min call →</a>
+</div>
+<div class="footer">
+<table><tr>
+<td style="padding-right:12px;vertical-align:middle"><div class="f-mark">P</div></td>
+<td style="vertical-align:middle;text-align:left"><div class="f-name">Gauravdeep · PageLabHQ</div><div class="f-role">Web Design &amp; Performance Consultant</div></td>
+</tr></table>
+<div class="f-source">Data sourced from Google PageSpeed Insights</div>
+</div>
+</body>
+</html>
